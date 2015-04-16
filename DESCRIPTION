@@ -1,0 +1,8 @@
+Package: reduceblock
+Title: Easy Tools for Transmission Reducing and Transmission Blocking Calculations and Modeling
+Version: 0.0.0.9000
+Authors@R: person("Bruce", "Swihart", , "bruce.swihart@gmail.com", role = c("aut", "cre"))
+Description: TBD
+Depends: R (>= 3.1.3)
+License: GPL-2
+LazyData: true
