@@ -7,7 +7,7 @@
 #' @keywords tra tba pip pim
 #' @export
 #' @examples
-#' one.minus.ratio.100(prevalence(rho_in=2.7, muci_in=10, theta_in=1.75),
+#' one.minus.ratio.100(prevalence(rho_in=exp(-3), muci_in=10, theta_in=1.75),
 #'                     prevalence(muci_in=10, theta_in=1.75))
 
 one.minus.ratio.100 <- function(num,den){100*(1-num/den)}

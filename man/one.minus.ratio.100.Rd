@@ -16,7 +16,7 @@ TRA and TBA both have the same form: 100*(1 - num/den).
 Just specify num and den and get the desired calculation.
 }
 \examples{
-one.minus.ratio.100(prevalence(rho_in=2.7, muci_in=10, theta_in=1.75),
+one.minus.ratio.100(prevalence(rho_in=exp(-3), muci_in=10, theta_in=1.75),
                     prevalence(muci_in=10, theta_in=1.75))
 }
 \keyword{pim}
