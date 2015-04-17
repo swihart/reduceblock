@@ -3,24 +3,6 @@ Bruce Swihart
 April 16, 2015  
 
 
-<style TYPE="text/css">
-code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
-</style>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
-    }
-});
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
-</script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 Standard Membrane Feeding Assay (SMFA) is a process to yield oocysts of a parasite within the midgut of a mosquito, often used in malaria vaccine experiments.  Well, several mosquitoes at a time, in different containers of different feeds.  The process involves and depends on the preparation of good, consistent controls, from which a treatment effect will be tested.  Good, consistent controls are essential to establsih before testing anything that might alter the number of oocysts.  Basically, we need to establish/know/reduce/standardize the noise of the processso that we can attempt to find the signal of a test.  In SMFA, the background noise is the variation of oocysts produced across mosquitoes under control conditions, which means 0 units of treatment dose to attempt to reduce the number of oocysts produce by parasite in the midgut of mosquitos.

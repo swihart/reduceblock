@@ -1,3 +1,4 @@
+
 ---
 title: "Why Model TBA and TRA?"
 author: "Bruce Swihart"
@@ -5,7 +6,9 @@ date: "April 16, 2015"
 output:
   html_document:
     keep_md: yes
+  pdf_document: default
 ---
+
 
 ```{r prelim, echo=FALSE, include=FALSE}
 library(ggplot2)
@@ -139,7 +142,5 @@ ggplot(tba_uncert, aes(x=lamc,y=tba, color=factor(tra)))+
              aes(x=control,y=tba_samp), 
              color="blue", 
              size=3) 
-
-
 ```
 
