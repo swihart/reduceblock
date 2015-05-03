@@ -7,7 +7,7 @@
 #' @examples
 #' poisson.tra(80,2)
 poisson.tra <- function(tba, lamc){
-  num = -log(1-(1-tba/100)(1-exp(-lamc)))
+  num = -log(1-(1-tba/100)*(1-exp(-lamc)))
   den = lamc
   one.minus.ratio.100(num,den)
 }
