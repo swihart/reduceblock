@@ -18,7 +18,7 @@ There are two commonly used:  transmission-reducing activity (TRA) and  transmis
 
 The form for both measures is :
 
-  * TBA = $100(1 - \frac{num}{den} )$
+  * $100(1 - \frac{num}{den} )$
   
 So the differences between TRA and TBA boil down to the differences of $\mu$ vs $p$.  
 
@@ -27,8 +27,8 @@ So the differences between TRA and TBA boil down to the differences of $\mu$ vs 
   
 Since both $\hat{\mu}$ and $\hat{p}$ have the same denominator, we can drill down our focus to the numerators.  After rewriting the numerator of $\hat{\mu}$ we have
 
-  * Numerator of Mean $\hat{\mu}$ = $\sum y_i 1_{\{y_i > 0\}}$
-  * Numerator of Prevalence $\hat{p}$   = $\sum 1_{\{y_i > 0\}}$
+  * $\hat{\mu}$ = $\sum y_i 1_{\{y_i > 0\}}$ (Numerator of Mean) 
+  * $\hat{p}$   = $\sum ~~~1_{\{y_i > 0\}}$ (Numerator of Prevalence) 
 
   
 If $y_i$ is the number of oocysts in mosquito $i$, then $y_i$ is an integer, $0, 1, 2, \dots$.  If $y_i$ can only be $0$ or $1$, then the mean and prevalence will be the same.  However, if it can be $0$, $1$, or $2$, then the mean will always be greater than or equal to the prevalence.  See the graphs below comparing the numerator of the mean to the numerator of the prevalence: 
@@ -52,13 +52,13 @@ Assume the population treatment group mean oocysts is $\lambda_t$ and likewise a
   *  Population TRA: $100(1 - \frac{\lambda_t}{\lambda_c} )$
   *  Sample TRA:     $100(1 - \frac{\overline{y_t}}{\overline{y_c}} )$
 
-  *  Population TBA: $100(1 - \frac{\exp(-\lambda_t)}{\exp(-\lambda_c)} )$
+  *  Population TBA: $100(1 - \frac{1-\exp(-\lambda_t)}{1-\exp(-\lambda_c)} )$
   *  Sample TBA:     $100(1 - \frac{\overline{1_{y_t > 0}}}{\overline{1_{y_c>0}}} )$
 
 
 If we solve the population TRA for $\lambda_t$, we can get an explicit relation for TRA and TBA (assuming the distribution of oocysts follows a Poisson distribution):
 
-*  Population TBA: $100(1-\frac{\exp(-\lambda_c(1-\frac{ {\rm TRA}}{100}))}{\exp(-\lambda_c)} )$
+*  Population TBA: $100(1-\frac{1-\exp(-\lambda_c(1-\frac{ {\rm TRA}}{100}))}{1-\exp(-\lambda_c)} )$
 
 Here is a plot that depicts the relation for population TBA as a function of the control mean for different values of population TRA:
 

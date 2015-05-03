@@ -2,4 +2,5 @@
 
 export(one.minus.ratio.100)
 export(poisson.tba)
+export(poisson.tra)
 export(prevalence)
