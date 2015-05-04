@@ -56,13 +56,15 @@ Assume the population treatment group mean oocysts is $\lambda_t$ and likewise a
   *  Sample TBA:     $100(1 - \frac{\overline{1_{y_t > 0}}}{\overline{1_{y_c>0}}} )$
 
 
-If we solve the population TRA for $\lambda_t$, we can get an explicit relation for TRA and TBA (assuming the distribution of oocysts follows a Poisson distribution):
-
-*  Population TBA: $100(1-\frac{1-\exp(-\lambda_c(1-\frac{ {\rm TRA}}{100}))}{1-\exp(-\lambda_c)} )$
-
-Here is a plot that depicts the relation for population TBA as a function of the control mean for different values of population TRA:
 
 ![plot of chunk unnamed-chunk-3](readme_files/figure-html/unnamed-chunk-3.png) 
+
+<!--
+Consider the TRA side of things:
+![plot of chunk unnamed-chunk-4](readme_files/figure-html/unnamed-chunk-4.png) 
+
+-->
+
 
 Quite clearly, the TRA-TBA relation depends on the control mean.
 
@@ -71,5 +73,5 @@ Now, of the three variables TRA, TBA, and the control mean there is one that is 
 
 However, the sample control mean may differ from the **target** control mean, and this introduces uncertainty into the TRA-TBA relation:
 
-![plot of chunk unnamed-chunk-4](readme_files/figure-html/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-5](readme_files/figure-html/unnamed-chunk-5.png) 
 

@@ -110,11 +110,6 @@ Assume the population treatment group mean oocysts is $\lambda_t$ and likewise a
   *  Sample TBA:     $100(1 - \frac{\overline{1_{y_t > 0}}}{\overline{1_{y_c>0}}} )$
 
 
-If we solve the population TRA for $\lambda_t$, we can get an explicit relation for TRA and TBA (assuming the distribution of oocysts follows a Poisson distribution):
-
-*  Population TBA: $100(1-\frac{1-\exp(-\lambda_c(1-\frac{ {\rm TRA}}{100}))}{1-\exp(-\lambda_c)} )$
-
-Here is a plot that depicts the relation for population TBA as a function of the control mean for different values of population TRA:
 
 ```{r, echo=FALSE}
 lamc = seq(0.1,20,0.1)
@@ -126,6 +121,22 @@ ggplot(tba_plot, aes(x=lamc,y=tba, color=factor(tra)))+geom_path(size=3)+
   ylab("TBA")+
   guides(color = guide_legend(title="TRA",reverse=TRUE))
 ```
+
+<!--
+Consider the TRA side of things:
+```{r, echo=FALSE}
+lamc = seq(0.1,20,0.1)
+n.lamc = length(lamc)
+tra_plot <- data.table(lamc=lamc, tba=rep(c(1,20,40,60,80,90,95,99), each=n.lamc))
+tra_plot[, tra:=poisson.tra(tba,lamc)]
+ggplot(tra_plot, aes(x=lamc,y=tra, color=factor(tba)))+geom_path(size=3)+
+  xlab(expression(lambda[c])) +
+  ylab("TRA")+
+  guides(color = guide_legend(title="TBA",reverse=TRUE))
+```
+
+-->
+
 
 Quite clearly, the TRA-TBA relation depends on the control mean.
 
